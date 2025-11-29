@@ -4,68 +4,66 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-blue-100 via-white to-cyan-100 text-blue-900 overflow-hidden flex items-center justify-center px-6 py-10">
+    <div className="relative h-full mt-20 bg-gradient-to-br from-blue-100 via-white to-cyan-100 text-blue-900 overflow-hidden flex items-center justify-center px-6 py-10">
 
-      {/* ANIMATED BACKGROUND ELEMENTS */}
+      {/* BACKGROUND BLURS */}
       <motion.div
-        className="absolute top-0 left-0 w-80 h-80 bg-cyan-400/20 rounded-full blur-[100px]"
-        animate={{ opacity: [0.5, 1, 0.5], scale: [1, 1.2, 1] }}
-        transition={{ repeat: Infinity, duration: 12 }}
-      />
-
-      <motion.div
-        className="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-blue-500/20 rounded-full blur-[130px]"
-        animate={{ opacity: [0.4, 0.8, 0.4], scale: [1, 1.15, 1] }}
+        className="absolute top-10 left-10 w-60 h-60 bg-cyan-400/20 rounded-full blur-[90px] md:w-80 md:h-80"
+        animate={{ opacity: [0.5, 1, 0.5], scale: [1, 1.15, 1] }}
         transition={{ repeat: Infinity, duration: 10 }}
       />
 
-      {/* MAIN LAYOUT */}
-      <div className="w-full max-w-7xl flex flex-col md:flex-row items-center gap-14 relative z-10">
+      <motion.div
+        className="absolute bottom-10 right-10 w-72 h-72 bg-blue-500/20 rounded-full blur-[110px] md:w-[28rem] md:h-[28rem]"
+        animate={{ opacity: [0.4, 0.8, 0.4], scale: [1, 1.1, 1] }}
+        transition={{ repeat: Infinity, duration: 9 }}
+      />
 
-        {/* LEFT CONTENT */}
-        <div className="w-full md:w-1/2">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
+      {/* MAIN CONTENT */}
+      <div className="w-full max-w-6xl flex flex-col md:flex-row items-center gap-12 md:gap-16 relative z-10">
+
+        {/* LEFT SECTION */}
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <motion.h1
+            initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.9 }}
+            className="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-blue-700 via-cyan-600 to-blue-500 bg-clip-text text-transparent"
           >
-            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-blue-700 via-cyan-600 to-blue-500 bg-clip-text text-transparent drop-shadow-sm">
-              Poeage Manpower
-              <br /> Supply & Consultancy
-            </h1>
-          </motion.div>
+            Poeage Manpower
+            <br /> Supply & Consultancy
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            className="mt-6 text-blue-800/80 text-lg max-w-md"
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-5 text-blue-800/80 text-base md:text-lg max-w-md mx-auto md:mx-0"
           >
-            Providing skilled workforce solutions and professional consultancy services —
-            empowering companies with reliable, qualified, and industry-ready talent.
+            Providing industry-ready workforce and consultancy services to help companies hire
+            qualified, skilled, and reliable talent.
           </motion.p>
 
-          {/* CTA BUTTON */}
           <motion.button
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-10 px-10 py-4 bg-gradient-to-r from-blue-700 to-cyan-500 text-white font-semibold rounded-full shadow-xl hover:shadow-blue-300 flex items-center gap-3 text-lg"
+            className="mt-8 px-8 py-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white font-semibold rounded-full shadow-xl hover:shadow-blue-300 flex items-center gap-3 text-base md:text-lg mx-auto md:mx-0"
           >
-            Hire Talent <ArrowRight size={24} />
+            Hire Talent <ArrowRight size={22} />
           </motion.button>
         </div>
 
-        {/* RIGHT IMAGE (MANPOWER ILLUSTRATION) */}
+        {/* RIGHT IMAGE */}
         <motion.div
-          initial={{ opacity: 0, x: 60 }}
+          initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.9 }}
           className="w-full md:w-1/2 flex justify-center"
         >
           <img
-            src="https://cdni.iconscout.com/illustration/premium/thumb/hr-management-service-5693196-4740743.png"
-            alt="Manpower Supply & Consultancy Illustration"
-            className="w-[480px] drop-shadow-2xl"
+            src="https://www.poeage.com/static/media/hero.0f6d39dbe780e0b1eccd.png"
+            alt="Manpower Illustration"
+            className="w-64 md:w-[420px] drop-shadow-2xl"
           />
         </motion.div>
       </div>
