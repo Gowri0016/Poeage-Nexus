@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="p-3 md:p-4 bg-cyan-500/10 border border-cyan-300 rounded-xl md:rounded-2xl shadow-sm">
                 <Phone className="text-cyan-600" />
               </div>
-              <p className="text-gray-800 text-base md:text-lg font-medium">+91 98765 43210</p>
+              <p className="text-gray-800 text-base md:text-lg font-medium">+91 805-688-9616</p>
             </div>
 
             {/* Email */}
