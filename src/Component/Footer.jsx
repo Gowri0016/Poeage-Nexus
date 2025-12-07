@@ -30,11 +30,11 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-600 text-[15px]">
-            <li><a href="#home" className="hover:text-gray-900">Home</a></li>
-            <li><a href="#about" className="hover:text-gray-900">About</a></li>
-            <li><a href="#jobs" className="hover:text-gray-900">Jobs</a></li>
-            <li><a href="#clients" className="hover:text-gray-900">Clients</a></li>
-            <li><a href="#contact" className="hover:text-gray-900">Contact</a></li>
+            <li><a href="/" className="hover:text-gray-900">Home</a></li>
+            <li><a href="/about" className="hover:text-gray-900">About</a></li>
+            <li><a href="/jobs" className="hover:text-gray-900">Jobs</a></li>
+            <li><a href="/clients" className="hover:text-gray-900">Clients</a></li>
+            <li><a href="/contact" className="hover:text-gray-900">Contact</a></li>
           </ul>
         </div>
 
@@ -53,15 +53,15 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Us</h3>
-          <p className="flex items-center gap-2 text-gray-600"><Mail size={18}/> manpower@company.com</p>
-          <p className="flex items-center gap-2 text-gray-600 mt-2"><Phone size={18}/> +91 98765 43210</p>
+          <p className="flex items-center gap-2 text-gray-600"><Mail size={18}/> manpower@poeagenexus.com</p>
+          <p className="flex items-center gap-2 text-gray-600 mt-2"><Phone size={18}/> +91 805-688-9616</p>
           <p className="flex items-center gap-2 text-gray-600 mt-2"><MapPin size={18}/> Tamil Nadu, India</p>
         </div>
       </div>
 
       {/* Bottom */}
       <div className="border-t border-gray-200 mt-12 pt-5 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Man Power Supply. All rights reserved.
+     © {new Date().getFullYear()} Man Power Supply. A subsidiary of Poeage Groups. All rights reserved.
       </div>
     </footer>
   );

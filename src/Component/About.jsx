@@ -91,7 +91,7 @@ export default function Aboutus() {
 
   return (
     <>
-      <main className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 md:px-12 lg:px-2 mt-12">
+      <main className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 md:px-12 lg:px-2">
         {/* Section Heading */}
         <motion.div
           initial="hidden"

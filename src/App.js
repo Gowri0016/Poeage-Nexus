@@ -7,8 +7,9 @@ import About from './Component/About';
 import Projects from './Component/Projects';
 import Services from './Component/Services';
 import Contact from './Component/Contact';
-
-function App() {
+import Clients from './Component/Clintes';
+import Jobs from './Component/Jobs';
+function App() {  
   return (
     <div className="App">
 
@@ -19,6 +20,8 @@ function App() {
         <Route path='/projects' element={<Projects/>} />
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/clients'element ={<Clients/>}/>
+        <Route path='/jobs'element={<Jobs/>}/>
       </Routes>
       <Footer />
     </div>
